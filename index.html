@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>বায়তুশ শরফ আদর্শ দাখিল মাদরাসা — স্বাগতম</title>
+  <meta name="description" content="শিক্ষাপ্রতিষ্ঠানের জন্য সরকারি নির্দেশনা-সম্মত ওয়েবসাইট।" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🏫</text></svg>">
+  <link rel="preload" href="assets/styles.css" as="style" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container bar">
+      <a class="brand" href="/">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/School.svg" alt="লোগো" />
+        <div>
+          <strong>বায়তুশ শরফ আদর্শ দাখিল মাদরাসা</strong>
+          <div class="meta">EIIN: 123456 • প্রতিষ্ঠা: ২০১৭ • রন্তাপালং, উখিয়া, কক্সবাজার</div>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="active">হোম</a>
+        <a href="committee.html">কমিটি</a>
+        <a href="teachers.html">শিক্ষক</a>
+        <a href="students.html">শিক্ষার্থী</a>
+        <a href="#contact">যোগাযোগ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container space">
+    <section class="card">
+      <div class="row between center">
+        <h1 class="m0">সর্বশেষ নোটিশ</h1>
+        <span class="tag" id="lastUpdated">--</span>
+      </div>
+      <div class="ticker" id="noticeList" aria-label="নোটিশ তালিকা"></div>
+      <details class="mt1">
+        <summary>পুরোনো নোটিশ</summary>
+        <ul id="archivedNotices"></ul>
+      </details>
+    </section>
+
+    <section class="grid two">
+      <article class="card">
+        <h2 class="m0">প্রতিষ্ঠান পরিচিতি</h2>
+        <p>এই সাইটে সরকারি নির্দেশনা অনুযায়ী প্রয়োজনীয় সেকশনসমূহ প্রকাশ করা হয়—নোটিশ, পরিচিতি, পরিচালনা কমিটি, শিক্ষক/কর্মচারী, শিক্ষার্থী, ভর্তি, নীতিমালা, RTI/GRS, ক্যালেন্ডার, ডাউনলোড ও যোগাযোগ।</p>
+        <ul>
+          <li><strong>ধরণ:</strong> দাখিল মাদরাসা</li>
+          <li><strong>অবস্থান:</strong> রন্তাপালং, উখিয়া, কক্সবাজার</li>
+        </ul>
+      </article>
+      <aside class="card">
+        <h3 class="m0">দ্রুত লিংক</h3>
+        <ul class="m0">
+          <li><a href="https://ebmeb.gov.bd/" target="_blank" rel="noopener">মাদরাসা বোর্ড</a></li>
+          <li><a href="https://www.educationboardresults.gov.bd/" target="_blank" rel="noopener">বোর্ড রেজাল্ট</a></li>
+          <li><a href="committee.html">পরিচালনা কমিটি</a></li>
+          <li><a href="teachers.html">শিক্ষকদের তালিকা</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="contact" class="grid two">
+      <article class="card">
+        <h2 class="m0">যোগাযোগ</h2>
+        <address>
+          রন্তাপালং, উখিয়া, কক্সবাজার<br>মোবাইল: +8801XXXXXXXXX<br>ই-মেইল: info@example.edu.bd
+        </address>
+        <iframe title="মানচিত্র" style="width:100%; height:280px; border:0; border-radius:.75rem" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=91.95%2C21.19%2C92.30%2C21.45&layer=mapnik"></iframe>
+      </article>
+      <aside class="card">
+        <h3 class="ম0">ফিডব্যাক</h3>
+        <form id="contactForm">
+          <label for="cname">নাম</label>
+          <input id="cname" required>
+          <label for="cemail">ই-মেইল</label>
+          <input id="cemail" type="email" required>
+          <label for="cmsg">বার্তা</label>
+          <textarea id="cmsg" rows="4" required></textarea>
+          <button class="btn primary" type="submit">পাঠান</button>
+          <p id="contactStatus" class="muted"></p>
+        </form>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid three">
+        <div>
+          <h3 class="m0">প্রতিষ্ঠান</h3>
+          <p class="muted">EIIN: 123456 • EMIS: 000000</p>
+        </div>
+        <div>
+          <h3 class="m0">নীতি</h3>
+          <ul>
+            <li><a href="#">গোপনীয়তা নীতি</a></li>
+            <li><a href="#">ব্যবহারের শর্ত</a></li>
+            <li><a href="#">অ্যাক্সেসিবিলিটি</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="m0">শেষ হালনাগাদ</h3>
+          <p id="buildTime">--</p>
+        </div>
+      </div>
+      <p class="muted">© <span id="year"></span> আপনার প্রতিষ্ঠানের নাম।</p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+  <script>window.PAGE = 'home';</script>
+</body>
+</html>
